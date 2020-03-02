@@ -1,13 +1,19 @@
 # GATK.gVCF.header
 Description of a typical gVCF
 
-##fileformat=VCFv4.2
-##ALT=<ID=NON_REF,Description="Represents any possible alternative allele at this location">
-
+## fileformat=VCFv4.2
+<br>
+<br>
+## ALT
+NON_REF.<br>
+Represents any possible alternative allele at this location<br>
+<br>
+<br>
 # FILTER section
-LowQual
-Low quality
-
+LowQual.<br>
+Low quality<br>
+<br>
+<br>
 # FORMAT section
 ## AD
 Allelic depths for the ref and alt alleles in the order listed.<br>
