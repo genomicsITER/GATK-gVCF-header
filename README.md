@@ -63,6 +63,40 @@ Number=4<br>
 Type=Integer<br>
 <br>
 <br>
+# INFO section
+<br>
+<br>
+<br>
+<br>
+## AC
+Allele count in genotypes, for each ALT allele, in the same order as listed.<br>
+Number=A<br>
+Type=Integer<br>
+<br>
+<br>
+## AF
+Allele Frequency, for each ALT allele, in the same order as listed.<br>
+Number=A<br>
+Type=Float<br>
+<br>
+<br>
+## AN
+Total number of alleles in called genotypes.<br>
+Number=1<br>
+Type=Integer<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ## BaseQRankSum
 Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities.<br>
 Number=1<br>
