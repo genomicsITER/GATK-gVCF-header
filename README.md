@@ -1,7 +1,5 @@
 # GATK.gVCF.header
-Description of a typical gVCF
-
-## fileformat=VCFv4.2
+Description of a typical gVCF (fileformat=VCFv4.2).<br>
 <br>
 <br>
 ## ALT
