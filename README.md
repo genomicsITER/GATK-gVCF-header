@@ -4,60 +4,115 @@ Description of a typical gVCF
 ##fileformat=VCFv4.2
 ##ALT=<ID=NON_REF,Description="Represents any possible alternative allele at this location">
 
-##FILTER=<ID=LowQual,Description="Low quality">
+# FILTER section
+LowQual
+Low quality
 
-##FORMAT section
-AD
+# FORMAT section
+## AD
 Allelic depths for the ref and alt alleles in the order listed
 Number=R
 Type=Integer
 
-DP
+## DP
 Approximate read depth (reads with MQ=255 or with bad mates are filtered)
 Number=1
 Type=Integer
 
-GQ
+## GQ
 Genotype Quality
 Number=1
 Type=Integer
 It corresponds to the difference of the two most probable genotypes (since the most probable is assigned a '0', the lowest, likelihood)
 
-GT
+## GT
 Genotype
 Number=1
 Type=String
 
-PGT
+## PGT
 Physical phasing haplotype information, describing how the alternate alleles are phased in relation to one another
 Number=1
 Type=String
 
-PID
+## PID
 Physical phasing ID information, where each unique ID within a given sample (but not across samples) connects records 
 within a phasing group
 Number=1
 Type=String
 
-PL
+## PL
 Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification
 Number=G
 Type=Integer
 
-SB,Number=4,Type=Integer,
-Description="Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias.">
+## SB
+Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias
+Number=4
+Type=Integer
 
-##INFO=<ID=BaseQRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities">
-##INFO=<ID=ClippingRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref number of hard clipped bases">
-##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">
-##INFO=<ID=DS,Number=0,Type=Flag,Description="Were any of the samples downsampled?">
-##INFO=<ID=ExcessHet,Number=1,Type=Float,Description="Phred-scaled p-value for exact test of excess heterozygosity">
-##INFO=<ID=HaplotypeScore,Number=1,Type=Float,Description="Consistency of the site with at most two segregating haplotypes">
-##INFO=<ID=InbreedingCoeff,Number=1,Type=Float,Description="Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation">
-##INFO=<ID=MLEAC,Number=A,Type=Integer,Description="Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed">
-##INFO=<ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed">
-##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
-##INFO=<ID=MQRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities">
-##INFO=<ID=RAW_MQ,Number=1,Type=Float,Description="Raw data for RMS Mapping Quality">
-##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias">
+## BaseQRankSum
+Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities
+Number=1
+Type=Float
+
+## ClippingRankSum
+Number=1
+Type=Float
+Z-score From Wilcoxon rank sum test of Alt vs. Ref number of hard clipped bases
+
+## DP
+Approximate read depth; some reads may have been filtered
+Number=1
+Type=Integer
+
+## DS
+Were any of the samples downsampled?
+Number=0
+Type=Flag
+
+## ExcessHet
+Number=1
+Type=Float
+Phred-scaled p-value for exact test of excess heterozygosity
+
+## HaplotypeScore
+Number=1
+Type=Float
+Consistency of the site with at most two segregating haplotypes
+
+## InbreedingCoeff
+Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation
+Number=1
+Type=Float
+
+## MLEAC
+Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed
+Number=A
+Type=Integer
+
+## LEAF
+Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed
+Number=A
+Type=Float
+
+## MQ
+RMS Mapping Quality
+Number=1
+Type=Float
+
+## MQRankSum
+Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities
+Number=1
+Type=Float
+
+## RAW_MQ
+Number=1
+Type=Float
+Raw data for RMS Mapping Quality
+
+## ReadPosRankSum
+Number=1
+Type=Float
+Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias
 
