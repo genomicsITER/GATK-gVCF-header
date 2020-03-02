@@ -38,6 +38,12 @@ Number=1<br>
 Type=String<br>
 <br>
 <br>
+## MIN_DP
+Minimum DP observed within the GVCF block.<br>
+Number=1<br>
+Type=Integer<br>
+<br>
+<br>
 ## PGT
 Physical phasing haplotype information, describing how the alternate alleles are phased in relation to one another.<br>
 Number=1<br>
@@ -57,6 +63,10 @@ Number=G<br>
 Type=Integer<br>
 <br>
 <br>
+## RGQ
+Unconditional reference genotype confidence, encoded as a phred quality -10*log10 p(genotype call is wrong).<br>
+Number=1<br>
+Type=Integer<br>
 ## SB
 Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias.<br>
 Number=4<br>
@@ -106,8 +116,20 @@ Number=0<br>
 Type=Flag<br>
 <br>
 <br>
+## END
+Stop position of the interval.<br>
+Number=1<br>
+Type=Integer<br>
+<br>
+<br>
 ## ExcessHet
 Phred-scaled p-value for exact test of excess heterozygosity.<br>
+Number=1<br>
+Type=Float<br>
+<br>
+<br>
+## FS
+Phred-scaled p-value using Fisher's exact test to detect strand bias.<br>
 Number=1<br>
 Type=Float<br>
 <br>
@@ -148,6 +170,12 @@ Number=1<br>
 Type=Float<br>
 <br>
 <br>
+## QD
+Variant Confidence/Quality by Depth.<br>
+Number=1<br>
+Type=Float<br>
+<br>
+<br>
 ## RAW_MQ
 Raw data for RMS Mapping Quality.<br>
 Number=1<br>
@@ -156,6 +184,12 @@ Type=Float<br>
 <br>
 ## ReadPosRankSum
 Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias.<br>
+Number=1<br>
+Type=Float<br>
+<br>
+<br>
+## SOR
+Symmetric Odds Ratio of 2x2 contingency table to detect strand bias.<br>
 Number=1<br>
 Type=Float<br>
 <br>
