@@ -14,78 +14,6 @@ Low quality<br>
 <br>
 <br>
 
-# FORMAT section
-## AD
-Allelic depths for the ref and alt alleles in the order listed.<br>
-Number=R<br>
-Type=Integer<br>
-<br>
-<br>
-
-## DP
-Approximate read depth (reads with MQ=255 or with bad mates are filtered).<br>
-Number=1<br>
-Type=Integer<br>
-<br>
-<br>
-
-## GQ
-Genotype Quality.<br>
-It corresponds to the difference of the two most probable genotypes (since the most probable is assigned a '0', the lowest, likelihood).<br>
-Number=1<br>
-Type=Integer<br>
-<br>
-<br>
-
-## GT
-Genotype.<br>
-Number=1<br>
-Type=String<br>
-<br>
-<br>
-
-## MIN_DP
-Minimum DP observed within the GVCF block.<br>
-Number=1<br>
-Type=Integer<br>
-<br>
-<br>
-
-## PGT
-Physical phasing haplotype information, describing how the alternate alleles are phased in relation to one another.<br>
-Number=1<br>
-Type=String<br>
-<br>
-<br>
-
-## PID
-Physical phasing ID information, where each unique ID within a given sample (but not across samples) connects records 
-within a phasing group.<br>
-Number=1<br>
-Type=String<br>
-<br>
-<br>
-
-## PL
-Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification.<br>
-Number=G<br>
-Type=Integer<br>
-<br>
-<br>
-
-## RGQ
-Unconditional reference genotype confidence, encoded as a phred quality -10*log10 p(genotype call is wrong).<br>
-Number=1<br>
-Type=Integer<br>
-<br>
-<br>
-
-## SB
-Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias.<br>
-Number=4<br>
-Type=Integer<br>
-<br>
-<br>
 
 # INFO section
 ## AC
@@ -228,3 +156,77 @@ Type=Float<br>
 <br>
 <br>
 
+
+
+# FORMAT section
+## AD
+Allelic depths for the ref and alt alleles in the order listed.<br>
+Number=R<br>
+Type=Integer<br>
+<br>
+<br>
+
+## DP
+Approximate read depth (reads with MQ=255 or with bad mates are filtered).<br>
+Number=1<br>
+Type=Integer<br>
+<br>
+<br>
+
+## GQ
+Genotype Quality.<br>
+It corresponds to the difference of the two most probable genotypes (since the most probable is assigned a '0', the lowest, likelihood).<br>
+Number=1<br>
+Type=Integer<br>
+<br>
+<br>
+
+## GT
+Genotype.<br>
+Number=1<br>
+Type=String<br>
+<br>
+<br>
+
+## MIN_DP
+Minimum DP observed within the GVCF block.<br>
+Number=1<br>
+Type=Integer<br>
+<br>
+<br>
+
+## PGT
+Physical phasing haplotype information, describing how the alternate alleles are phased in relation to one another.<br>
+Number=1<br>
+Type=String<br>
+<br>
+<br>
+
+## PID
+Physical phasing ID information, where each unique ID within a given sample (but not across samples) connects records 
+within a phasing group.<br>
+Number=1<br>
+Type=String<br>
+<br>
+<br>
+
+## PL
+Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification.<br>
+Number=G<br>
+Type=Integer<br>
+<br>
+<br>
+
+## RGQ
+Unconditional reference genotype confidence, encoded as a phred quality -10*log10 p(genotype call is wrong).<br>
+Number=1<br>
+Type=Integer<br>
+<br>
+<br>
+
+## SB
+Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias.<br>
+Number=4<br>
+Type=Integer<br>
+<br>
+<br>
