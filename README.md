@@ -1,4 +1,4 @@
-# GATK.gVCF.header
+# Header of a GATK-based gVCF file
 Description of a typical gVCF (fileformat=VCFv4.2).<br>
 
 <br>
