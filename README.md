@@ -1,10 +1,10 @@
 # Header of a GATK-based gVCF file
 Description of a typical gVCF (fileformat=VCFv4.2).<br>
-
+<br>
 <br>
 ## ALT
+Represents any possible alternative allele at this location.<br>
 NON_REF.<br>
-Represents any possible alternative allele at this location<br>
 <br>
 <br>
 
